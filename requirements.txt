@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+langchain-core
+python-docx
+dotenv
+docx2pdf
+mammoth
+pdfkit
