@@ -2,7 +2,7 @@ langchain
 langchain-openai
 langchain-core
 python-docx
-dotenv
+python-dotenv
 docx2pdf
 mammoth
 pdfkit
