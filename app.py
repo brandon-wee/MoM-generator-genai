@@ -4,6 +4,7 @@ from outputs import MarkdownOutput, DOCXOutput, PDFOutput
 from datetime import datetime
 import json
 import os
+
 llm = MeetingOfMinutesLLM()
 markdown_output = MarkdownOutput()
 docx_output = DOCXOutput()
