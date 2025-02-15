@@ -1,6 +1,7 @@
 langchain
 langchain-openai
 langchain-core
+langchain-google-genai
 python-docx
 python-dotenv
 docx2pdf
