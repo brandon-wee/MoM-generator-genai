@@ -34,7 +34,8 @@ st.set_page_config(
 )
 
 st.title("Meeting of Minutes Generator")
-st.subheader("Automatically generate detailed meeting minutes from your transcripts. Powered by Gemini 2.0 Flash Lite.")
+st.caption("Automatically generate detailed meeting minutes from your transcripts.")
+
 output_format = st.selectbox("Select your output", ["Markdown", "DOCX", "PDF"])
 transcript = st.text_area("Insert your transcript")
 
@@ -85,3 +86,5 @@ if st.button("Submit"):
                 st.warning("An error occurred while processing the transcript. Please try again. If the problem persists, contact the administrator.")
             else:
                 st.warning("Currently, there is an issue with generating PDF files. We are working on fixing this issue. Please try generating a Markdown or DOCX file instead.")
+
+st.caption("Powered by Gemini 2.0 Flash Lite.")

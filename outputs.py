@@ -54,13 +54,13 @@ class DOCXOutput:
                 self.doc.add_heading(token[3:], level=1)
             elif token.startswith("{"):
                 key = token[1:-1]
-                if key == "action_items":
+                if key == "action_items" and minutes_content["action_items"]:
                     header = {"action_item": "Action Item", "assignee": "Assignee", "due_date": "Due Date"}
                     self.generate_table(minutes_content["action_items"], header)
-                elif key == "meeting_minutes":
+                elif key == "meeting_minutes" and minutes_content["meeting_minutes"]:
                     header = {"minutes": "Minutes", "speaker": "Speaker", "content": "Content"}
                     self.generate_table(minutes_content["meeting_minutes"], header)
-                elif key == "participants":
+                elif key == "participants" and minutes_content["participants"]:
                     self.generate_list(minutes_content["participants"])
                 else:
                     self.doc.add_paragraph(minutes_content[key], style="BodyText")
